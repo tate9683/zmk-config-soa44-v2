@@ -23,7 +23,7 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 1 700>;
+        input-processors = <&zip_temp_layer 1 500>;
 
         scroller {
             layers = <5>;
@@ -89,7 +89,7 @@
         evt-type = <2>;  // INPUT_EV_REL
         x-input-code = <0>;  // INPUT_REL_X
         y-input-code = <1>;  // INPUT_REL_Y
-        cpi = <400>;
+        cpi = <500>;
         invert-y;
         force-awake;
         wakeup-source;
